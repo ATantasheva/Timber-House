@@ -1,0 +1,235 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+   font-family: 'Roboto';
+   font-weight: 400;
+}
+
+/*Для оболочки и футера +для скролла */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+	max-width: 1030px; /* padding не входит в ширину тк box-sizing: content-box */
+	margin: 0 auto;
+	padding: 0px 15px; /* Чтобы не было прилипания к контенту */
+	box-sizing: content-box; /* Чтобы не прибавлять 30px k max-widxt - padding  не будет входить в размер 1046px */
+}
+img {
+   max-width: 100%;
+object-fit: cover;
+}
+/* header */
+
+.header {
+/* здксь было background-image: url('/img/bg.jpg')
+перенесли его в html
+потом напишем на php код и клиент сможет менять картинку сам */
+height: 100vh;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+padding-top: 110px;
+position: relative;
+}
+.header__inner {
+   position: absolute;
+   text-align: center;
+   width: 510px;
+   height: 510px;
+   border-radius: 50%;
+   border: 10px solid #f4d4a5;
+   background-color: #fff;
+   padding-top: 13px;
+   padding-bottom: 160px;
+   margin-left: 50px;
+}
+.header__name {
+   padding-top: 16px;
+   margin-bottom: 27px;
+   text-transform: uppercase;
+   font-family: 'Lato';
+font-size: 35px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #bf4200;
+}
+.header-phone {
+font-size: 35px;
+line-height: 1.2;
+font-weight: 700;
+margin-bottom: 45px;
+}
+.phone {
+   color: #000;
+   display: inline-block;
+}
+.phone:hover {
+   text-decoration: underline;
+}
+h1 {
+   font-size: 50px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #1fad26;
+margin-bottom: 43px;
+padding: 0px 10px 0px 10px;
+}
+.header__sale {
+   margin-top: 40px;
+}
+.main {
+   text-align: center;
+}
+.construction__container {
+padding: 76px 0px 0px 0px;
+}
+
+.main__title {
+   font-size: 41px;
+line-height: 1.2;
+font-weight: 700;
+color: #d07a2d;
+margin: 0px 0px 60px 0px;
+}
+.main__text {
+   font-size: 30px;
+color: #1e1e1e;
+}
+.main__text p {
+   margin: 30px 0px 93px 0px;
+}
+.main__image {
+padding: 0px 0px 80px 0px;
+}
+.project-container{
+}
+
+h3 {
+   font-size: 41px;
+line-height: 1.2;
+font-weight: 700;
+color: #d0662d;
+margin-bottom: 116px;
+}
+.project__item {
+   margin: 0px 0px 100px 0px;
+}
+.project__title {
+   font-size: 32px;
+line-height: 1.2;
+font-weight: 700;
+}
+.project__size {font-size: 25px;
+}
+.project__area {font-size: 25px;
+}
+.project__price {
+   font-size: 25px;
+font-weight: 400;
+color: #17753b;
+margin: 0px 0px 30px 0px;
+}
+.project__images {
+}
+.project__images-item {
+}
+.download {
+   height: 300px;
+   background-color: #f4d4a5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 0px 120px 0px;
+}
+.download-button {
+   display: inline-block;
+   ont-size: 32px;
+line-height: 1.2;
+font-weight: 700;
+text-decoration: underline;
+color: #ffffff;
+border: 5px solid #effd15;
+background-color: #17753b;
+padding: 33px 42px;
+}
+.gallery-container {
+   padding: 0px 0px 100px 0px;
+}
+.galler__container h3 {
+   margin: 0px 0px 40px 0px;
+}
+.gallery__text {
+   font-size: 25px;
+font-weight: 400;
+color: #1e1e1e;
+margin: 0px 0px 60px 0px;
+}
+.gallery__inner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0px 0px 100px 0px;
+}
+.gallery__inner img {
+   display: block;
+      width: 200px;
+}
+.footer-container {
+   padding: 100px 0px 0px 0px;
+}
+.footer {
+   text-align: center;
+}
+.footer .phone {
+   font-size: 50px;
+   line-height: 1.2;
+   font-weight: 700;
+   margin: 0px 0px 60px 0px;
+}
+
+
+.footer__email {
+   font-family: 'Lato';
+   font-size: 30px;
+text-decoration: underline;
+color: #2f8bc5;
+padding: 0px 0px 100px 0px;
+}
